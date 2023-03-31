@@ -4,11 +4,12 @@
   box-sizing: border-box;
 }
 body {
-  max-width: 900px;
+  max-width: 1000px;
 }
 #page-wrapper {
   margin-left: 200px;
   margin-top: 150px;
+  position: relative;
 }
 
 #navbar {
@@ -22,11 +23,11 @@ body {
   justify-content: space-between;
 }
 #navbar img {
-  width: 200px;
+  width: 150px;
   border-radius: 10px;
 }
 #navbar ul {
-  margin-top: 115px;
+  margin-top: 45px;
 }
 #navbar li {
   display: inline;
@@ -43,4 +44,52 @@ body {
 
 .heading {
   text-align: center;
+}
+.grid {
+  display: flex;
+}
+
+#features .desc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.icon img {
+  padding-right: 50px;
+  width: 125px;
+  opacity: 0.8;
+}
+#classes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  border: 1px solid #333;
+  margin: 40px 12px;
+}
+.product .level {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.product ol li {
+  list-style: none;
+  padding: 8px;
+}
+.product h2 {
+  padding: 15px;
+}
+button {
+  text-transform: uppercase;
+  padding: 5px 15px;
+  border: none;
 }
